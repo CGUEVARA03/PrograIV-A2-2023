@@ -30,31 +30,69 @@
                         <div class="col-9 col-md-3">
                             <input class="form-control" type="text" v-model="alumno.direccion" name="txtDireccionAlumno" id="txtDireccionAlumno">
                         </div>
-                        <div class="row p-1">
-                            <div class="col-3 col-md-2">Municipio:</div>
-                            <div class="col-9 col-md-3">
-                                <input class="form-control" type="text" v-model="alumno.municipio" name="txtMunicipioAlumno" id="txtMunicipioAlumno">
-                            </div>
-                            <div class="row p-1">
-                                <div class="col-3 col-md-2">Departamento:</div>
-                                <div class="col-9 col-md-3">
-                                    <input class="form-control" type="text" v-model="alumno.departamento" name="txtDepartamentoAlumno" id="txtDepartamentoAlumno">
-                                </div>
-                                <div class="row p-1">
-                                    <div class="col-3 col-md-2">Teléfono:</div>
-                                    <div class="col-9 col-md-3">
-                                        <input class="form-control" type="text" v-model="alumno.telefono" name="txtTelefonoAlumno" id="txtTelefonoAlumno">
-                                    </div>
-                                    <div class="row p-1">
-                                        <div class="col-3 col-md-2">Fecha de nacimiento:</div>
-                                        <div class="col-9 col-md-3">
-                                            <input class="form-control" type="text" v-model="alumno.fecha" name="txtFechaAlumno" id="txtFechaAlumno">
-                                        </div>
-                                        <div class="row p-1">
-                                            <div class="col-3 col-md-2">Sexo:</div>
-                                            <div class="col-9 col-md-3">
-                                                <input class="form-control" type="text" v-model="alumno.sexo" name="txtSexoAlumno" id="txtSexoAlumno">
-                                            </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                           <label class="input-group-text" for="inputGroupSelect01">Municipio</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                          <option selected>Selecciona</option>
+                          <option value="1">Ahuachapán</option>
+                          <option value="2">Cabañas</option>
+                          <option value="3">Chalatenango</option>
+                          <option value="4">Cuscatlán</option>
+                          <option value="5">La Libertad</option>
+                          <option value="6">Morazán</option>
+                          <option value="7">La Paz</option>
+                          <option value="8">Santa Ana</option>
+                          <option value="9">San Miguel</option>
+                          <option value="10">San Salvador</option>
+                          <option value="11">San Vicente</option>
+                          <option value="12">Sonsonate</option>
+                          <option value="13">La Unión</option>
+                          <option value="14">Usulután</option>
+                        </select>
+                      </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                         <label class="input-group-text" for="inputGroupSelect01">Departamento</label>
+                      </div>
+                      <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Selecciona</option>
+                        <option value="1">Ahuachapán</option>
+                        <option value="2">Cabañas</option>
+                        <option value="3">Chalatenango</option>
+                        <option value="4">Cuscatlán</option>
+                        <option value="5">La Libertad</option>
+                        <option value="6">Morazán</option>
+                        <option value="7">La Paz</option>
+                        <option value="8">Santa Ana</option>
+                        <option value="9">San Miguel</option>
+                        <option value="10">San Salvador</option>
+                        <option value="11">San Vicente</option>
+                        <option value="12">Sonsonate</option>
+                        <option value="13">La Unión</option>
+                        <option value="14">Usulután</option>
+                      </select>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-3 col-md-2">Teléfono:</div>
+                        <div class="col-9 col-md-3">
+                            <input class="form-control" type="text" v-model="alumno.telefono" name="txtTelefonoAlumno" id="txtTelefonoAlumno">
+                        </div>
+                    </div>
+                    <div class="col-9 col-md-3">
+                        <input type="date" name="" id="">
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Femenino</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Masculino</label>
+                      </div>
                     <div class="row p-1">
                         <div class="col col-md-6">
                             <input class="btn btn-success" type="submit" value="Guardar Datos">
