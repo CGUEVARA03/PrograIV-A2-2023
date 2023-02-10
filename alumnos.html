@@ -68,6 +68,10 @@
                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                                  <label class="form-check-label" for="inlineRadio2">Masculino</label>
                                 </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">No binario</label>
+                                   </div>
                             </div>
                             <div class="row p-1">
                                 <div class="col-3 col-md-3">
@@ -82,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-9">
                 <div class="card" >
                     <div class="card-header">LISTA DE ALUMNOS</div>
                     <div class="card-body">
@@ -90,19 +94,21 @@
                             <thead>
                                 <tr>
                                     <th style="color: black">BUSCAR:</th>
-                                    <th colspan="2"><input type="text" class="form-control" v-model="buscar"
+                                    <th colspan="4"><input type="text" class="form-control" v-model="buscar"
                                         @keyup="listaralumnos()"
-                                        placeholder="Buscar por nombre"></th>
+                                        placeholder="Buscar al alumno"></th>
                                 </tr>
                                 <tr>
                                     <th style="color: black;">CODIGO</th> 
-                                    <th style="color: black" colspan="2">NOMBRE</th>
+                                    <th style="color: black" >NOMBRE</th>
+                                    <th style="color: black;">TELEFONO</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr v-for="alumno in alumnos" :key="alumno.idalumno" @click="modificaralumno(alumno)" >
                                     <td>{{ alumno.codigo }}</td>
                                     <td>{{ alumno.nombre }}</td>
+                                    <td>{{ alumno.telefono }}</td>
                                     <td><button class="btn btn-danger" @click="eliminaralumno(alumno)">ELIMINAR</button></td>
                                 </tr>
                             </tbody>
